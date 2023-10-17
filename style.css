@@ -1,0 +1,146 @@
+@font-face {
+    font-family: pop;
+    src: url(/Poppins-Regular.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: pop;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* background-color: orchid; */
+    overflow: hidden;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5.5vw;
+}
+nav h1{
+    font-size: 4vw;
+    font-weight:bolder;
+}
+nav .side{
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    font-size: 1.5vw;
+}
+nav .side h4{
+    font-size: 1.55vw;
+}
+nav i{
+   /* font-size: 2vw; */
+   font-weight: 900;
+   display: none;
+}
+nav .side button{
+    padding: 0.6vw 1.4vw;
+    color: #F5F8F7;
+    font-size: 1.2vw;
+    border: none;
+    border-radius: 4px;
+    background-color: #025B92;
+}
+#page1{
+    height: calc(100% - 80px);
+    width: 100%;
+    background-color: #F5F8F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    /* background-color: blanchedalmond; */
+    padding: 5.5vw 5.5vw;
+}
+.left h3{
+    font-size: 3.50vw;
+}
+.left p{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-size: 1.2vw;
+}
+.left span{
+    color: #025B92;
+}
+.left button{
+    padding: 0.98vw 1.90vw;
+    color: #F5F8F7;
+    font-size: 2vw;
+    font-weight: 900;
+    border: none;
+    border-radius: 4px;
+    background-color: #025B92;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    background-color: rebeccapurple;
+}
+.right img{
+    height: 100%;
+    width: 100%;
+}
+@media (max-width:600px) {
+    nav{
+        padding: 0 4vw;
+        height: 80px;
+    }
+    nav .side button{
+        display: none;
+    }
+    nav h1{
+        font-size: 7.99vw;
+    }
+    nav h4{
+        display: none;
+    }
+    nav i{
+        display: block;
+        font-size: 7vw;
+    }
+
+    #page1{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 50%;
+    }
+    .left h3{
+        font-size: 8vw;
+    }
+    .left p{
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 3vw;
+        margin-bottom: 4vw;
+    }
+    .left button{
+        font-size: 5.4vw;
+        padding: 1.5vw 2.5vw;
+    }
+    .right {
+        height: 50%;
+        width: 100%;
+    }
+}
